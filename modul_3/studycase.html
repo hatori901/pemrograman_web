@@ -8,12 +8,14 @@
 	</head>
 	<body>
 		<h1>Studi Kasus: Validasi Input HTML5</h1>
+        <!-- Memasukan validasi pada form -->
 		<form action="">
 			<table>
 				<tr>
 					<td>Nama</td>
 					<td>
 						:
+                        <!-- Membuat input text dengan validasi harus diisi dengan pola input huruf a-Z -->
 						<input
 							type="text"
 							name="nama"
@@ -28,22 +30,24 @@
 					<td>Usia</td>
 					<td>
 						:
+                        <!-- Membuat input number dengan validasi harus diisi dengan pola input angka 17-30 -->
 						<input
 							type="number"
 							name="usia"
 							value="0"
 							min="17"
 							max="30"
-							placeholder="Masukan Nama"
+							placeholder="Masukan Usia"
 							size="30"
 							required
-						/>
+						/> (17 - 30)
 					</td>
 				</tr>
 				<tr>
 					<td>Email</td>
 					<td>
 						:
+                        <!-- Membuat input email dengan validasi harus diisi -->
 						<input
 							type="email"
 							name="email"
@@ -57,6 +61,7 @@
 					<td>Web</td>
 					<td>
 						:
+                        <!-- Membuat input url dengan validasi harus diisi -->
 						<input
 							type="url"
 							name="web"
@@ -70,6 +75,7 @@
 					<td>Password</td>
 					<td>
 						:
+                        <!-- Membuat input password dengan validasi harus diisi dengan panjang karakter minimal 8 -->
 						<input
 							type="password"
 							name="password"
@@ -83,6 +89,7 @@
 				<tr>
 					<td></td>
 					<td>
+                        <!-- Membuat tombol submit -->
 						<input type="submit" value="Submit" />
 					</td>
 				</tr>
