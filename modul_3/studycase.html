@@ -4,17 +4,36 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Validasi HTML5</title>
+		<title>Study Case Modul 3</title>
 	</head>
 	<body>
+		<h1>Studi Kasus: Validasi Input HTML5</h1>
 		<form action="">
 			<table>
 				<tr>
-					<td>Nama Lengkap</td>
+					<td>Nama</td>
 					<td>
+						:
 						<input
 							type="text"
 							name="nama"
+							placeholder="Masukan Nama"
+							size="30"
+                            pattern="[A-Za-z ]+"
+							required
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>Usia</td>
+					<td>
+						:
+						<input
+							type="number"
+							name="usia"
+							value="0"
+							min="17"
+							max="30"
 							placeholder="Masukan Nama"
 							size="30"
 							required
@@ -22,36 +41,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Username</td>
-					<td>
-						<input
-							type="text"
-							name="username"
-							placeholder="Masukan Username"
-							required
-						/>
-					</td>
-				</tr>
-				<tr>
-					<td>Password</td>
-					<td>
-						<input
-							type="password"
-							name="password"
-							placeholder="Masukan Password"
-							required
-						/>
-					</td>
-				</tr>
-				<tr>
-					<td>Birth</td>
-					<td>
-						<input type="date" name="birth" size="30" required />
-					</td>
-				</tr>
-				<tr>
 					<td>Email</td>
 					<td>
+						:
 						<input
 							type="email"
 							name="email"
@@ -62,13 +54,28 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Telepon</td>
+					<td>Web</td>
 					<td>
+						:
 						<input
-							type="text"
-							name="tel"
-							placeholder="Masukan Telepon"
-							maxlength="12"
+							type="url"
+							name="web"
+							placeholder="https://"
+							size="30"
+							required
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						:
+						<input
+							type="password"
+							name="password"
+							minlength="8"
+							placeholder="Masukan Password"
+							size="30"
 							required
 						/>
 					</td>
@@ -76,7 +83,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<input type="submit" value="Simpan" />
+						<input type="submit" value="Submit" />
 					</td>
 				</tr>
 			</table>
