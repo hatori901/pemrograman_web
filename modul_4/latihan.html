@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling CSS</title>
+    <!-- Menerapkan embedded css -->
+    <style type="text/css"> 
+        body{
+            /* membuat background warna abu-abu */
+            background-color: #f0f0f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* membuat class container */
+        .container{
+            width: 100%; /* lebar 100% */
+            max-width: 960px; /* lebar maksimal 960px */
+            margin: 0 auto; /* margin auto */
+            background-color: #fff; /* background warna putih */
+            padding: 20px; /* jarak padding 20px */
+        }
+        
+        /* membuat stlying p */
+        p{
+            font-size: 20px; /* ukuran font 20px */
+            font-family: 'Courier New', Courier, monospace; /* font family */
+            color: #000; /* warna font hitam */
+        }
+    </style>
+    <!-- Menerapkan linked css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menerapkan inline CSS -->
+        <h1 style="font-size: 30px; font-weight: bold; text-decoration: underline;">
+            Styling CSS
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, beatae!
+        </p>
+        <!-- Membuat style css dengan ukuran font 25px, font weight bold, dan text decoration underline -->
+        <h2 style="font-size: 25px; font-weight: bold; text-decoration: underline;"> 
+            Border
+        </h2>
+        <!-- Membuat tag division dan style css dengan class border1 -->
+        <div class="border1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni deserunt numquam excepturi facere ut? Temporibus veniam debitis non rem cum!
+            </p>
+        </div>
+        <!-- Membuat style css dengan class border2 -->
+        <div class="border2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni deserunt numquam excepturi facere ut? Temporibus veniam debitis non rem cum!
+            </p>
+        </div>
+        <div>
+            <!-- Membuat style css dengan ukuran font 25px, font weight bold, dan text decoration underline -->
+            <h2 style="font-size: 25px; font-weight: bold; text-decoration: underline;">List</h2>
+            <!-- Membuat style css dengan class border1 -->
+            <div class="border1">
+                <h3>List Normal</h3>
+                Membuat list dengan tag <b>ul</b> dan <b>li</b>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="border1">
+                <h3>List Style</h3>
+                <!-- Membuat list dengan styling css -->
+                <ul id="list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
