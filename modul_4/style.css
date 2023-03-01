@@ -1,0 +1,30 @@
+.border1{ /* membuat class border1 */
+    border: 1px solid #000; /* membuat border dengan ketebalan 1px dan warna hitam */
+    padding: 10px; /* membuat padding 10px */
+    margin: 10px; /* membuat margin 10px */
+}
+.border2{ /* membuat class border2 */
+    border: 1px solid #fa0000; /* membuat border dengan ketebalan 1px dan warna hitam */
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    padding: 20px; /* membuat padding 20px */
+    margin: 10px; /* membuat margin 10px */
+    width: 80%; /* membuat lebar 80% */
+    margin: auto; /* membuat margin auto */
+}
+#list{ /* membuat id list */
+    list-style-type: none; /* menghilangkan tanda list */
+    margin: 0; /* membuat margin 0 */
+    padding: 0; /* membuat padding 0 */
+}
+#list li{ /* membuat id list li */
+    background: linear-gradient(#fff, #ccc); /* membuat background linear-gradient dengan warna putih dan abu-abu */
+    border: 1px solid #000; /* membuat border dengan ketebalan 1px dan warna hitam */
+    padding: 10px; /* membuat padding 10px */
+    margin: 10px; /* membuat margin 10px */
+    cursor: pointer;
+}
+#list li:hover{ /* membuat id list li saat di hover */
+    background: linear-gradient(#ccc, #fff); /* membuat background linear-gradient dengan warna abu-abu dan putih */
+}
