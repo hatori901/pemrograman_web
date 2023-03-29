@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Latihan Bootstrap</title>
+        <style>
+            .text-ocean{
+                color: #0d6efd;
+            }
+            .text-center{
+                text-align: center;
+            }
+            .margin-atas{
+                margin-top: 20px;
+            }
+        </style>
+		<!-- CSS Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+		/>
+		<!-- JS Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="container bg-white shadow rounded-4 py-3">
+			<!-- membuat container dengan background putih dan memiliki bayangan -->
+			<div class="row">
+				<!-- membuat baris -->
+				<div class="col-12">
+					<!-- membuat kolom -->
+					<h1 class="text-center">Latihan</h1>
+					<!-- membuat judul dengan text rata tengah -->
+				</div>
+			</div>
+			<div class="row">
+				<!-- membuat baris -->
+				<div class="col-12">
+					<!-- membuat kolom -->
+					<p class="text-center">
+						<!-- membuat paragraf dengan text rata tengah -->
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Repellendus, a?
+					</p>
+				</div>
+			</div>
+			<div class="mx-5 my-3 py-3 px-2 bg-white rounded-4 shadow">
+				<!-- membuat kotak dengan background putih dan memiliki bayangan -->
+				<h2>Grid</h2>
+				<div class="row mx-auto text-center text-white my-2">
+					<!-- membuat baris dengan margin kiri dan kanan auto -->
+					<div class="col-md-6 bg-danger">span 1</div>
+					<!-- membuat kolom dengan background merah -->
+					<div class="col-md-6 bg-warning">span 2</div>
+					<!-- membuat kolom dengan background kuning -->
+				</div>
+				<div class="row mx-auto text-center text-white my-2">
+					<!-- membuat baris dengan margin kiri dan kanan auto -->
+					<div class="col-md-4 bg-danger">span 1</div>
+					<!-- membuat kolom dengan background merah -->
+					<div class="col-md-4 bg-warning">span 2</div>
+					<!-- membuat kolom dengan background kuning -->
+					<div class="col-md-4 bg-info">span 3</div>
+					<!-- membuat kolom dengan background biru -->
+				</div>
+			</div>
+			<div class="my-5 rounded-3 shadow mx-5 py-2 px-3">
+				<!-- membuat kotak dengan background putih dan memiliki bayangan -->
+				<h2>Table</h2>
+				<table class="table table-striped table-inverse table-responsive py-5">
+					<!-- membuat tabel dan table responsive dengan background putih dan memiliki bayangan -->
+					<thead class="thead-inverse">
+						<!-- membuat kepala tabel -->
+						<tr>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- membuat isi tabel -->
+						<tr>
+							<td scope="row">Erwin</td>
+							<td>Alam</td>
+							<td>Erwin Alam@gmail.com</td>
+						</tr>
+						<tr>
+							<td scope="row">Erwin</td>
+							<td>Alam</td>
+							<td>Erwin Alam@gmail.com</td>
+						</tr>
+						<tr>
+							<td scope="row">Erwin</td>
+							<td>Alam</td>
+							<td>Erwin Alam@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="my-5 rounded-3 shadow mx-5 py-2 px-3">
+				<!-- membuat kotak dengan background putih dan memiliki bayangan -->
+				<h2>Button</h2>
+				<button type="button" class="btn btn-primary">Primary</button>
+				<!-- membuat button dengan background biru -->
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<!-- membuat button dengan background abu-abu -->
+				<button type="button" class="btn btn-success">Success</button>
+				<!-- membuat button dengan background hijau -->
+				<button type="button" class="btn btn-danger">Danger</button>
+				<!-- membuat button dengan background merah -->
+				<button type="button" class="btn btn-warning">Warning</button>
+				<!-- membuat button dengan background kuning -->
+				<button type="button" class="btn btn-info">Info</button>
+				<!-- membuat button dengan background biru -->
+				<button type="button" class="btn btn-light">Light</button>
+				<!-- membuat button dengan background putih -->
+				<button type="button" class="btn btn-dark">Dark</button>
+				<!-- membuat button dengan background hitam -->
+				<button type="button" class="btn btn-link">Link</button>
+				<!-- membuat button dengan background transparan -->
+			</div>
+			<div class="my-5 rounded-3 shadow mx-5 py-2 px-3">
+				<h2>Forms</h2>
+				<form action="">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="">First Name</label>
+								<input
+									type="text"
+									class="form-control"
+									name=""
+									id=""
+									aria-describedby="emailHelpId"
+									placeholder=""
+								/>
+							</div>
+						</div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<label for="">Last Name</label>
+								<input
+									type="text"
+									class="form-control"
+									name=""
+									id=""
+									aria-describedby="emailHelpId"
+									placeholder=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							name=""
+							id=""
+							aria-describedby="emailHelpId"
+							placeholder=""
+						/>
+					</div>
+					<div class="form-group">
+						<label for="">Password</label>
+						<input
+							type="password"
+							class="form-control"
+							name=""
+							id=""
+							placeholder=""
+						/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="container-fluid bg-secondary">
+			<!-- membuat container fluid dengan background abu-abu -->
+			<div class="row">
+				<!-- membuat baris -->
+				<div class="col-12">
+					<!-- membuat kolom -->
+					<h1 class="text-center">Latihan</h1>
+					<!-- membuat judul dengan text rata tengah -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p class="text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Repellendus, a?
+					</p>
+				</div>
+			</div>
+		</div>
+        <p class="text-ocean text-center margin-atas">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, cum.
+        </p>
+	</body>
+</html>
